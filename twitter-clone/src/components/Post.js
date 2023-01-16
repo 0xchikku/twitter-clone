@@ -18,23 +18,24 @@ function Post({
   return (
     <div className='post'>
         <div className='post--avatar'>
-            <Avatar src='https://rdportsites.carrd.co/assets/images/image01.jpg?v=bdf90ed4' />
+            <Avatar src={avatar} />
         </div>
         <div className='post--body'>
             <div className='post--header'>
                 <div className='post--headerText'>
                     <h3>
-                        Ritesh{' '}
+                        {displayName}{' '}
                         <span className='post--headerSpecial'>
-                            <VerifiedOutlinedIcon className='post--badge'/>  @ritesh
+                            {verified && <VerifiedOutlinedIcon className='post--badge'/>}
+                            @{userName}
                         </span>
                     </h3>
                 </div>
                 <div className='post--headerDescription'>
-                    <p>Building a Twitter clone!</p>
+                    <p>{text}</p>
                 </div>
             </div>
-            <img src='https://rdportsites.carrd.co/assets/images/image03.jpg?v=bdf90ed4' alt='upslash' />
+            <img src={image} alt='upslash' />
             <div className='post--footer'>
                 <ChatBubbleOutlineOutlinedIcon fontSize='small' />
                 <RepeatOutlinedIcon fontSize='small'/>

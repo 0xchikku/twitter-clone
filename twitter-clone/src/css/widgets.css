@@ -21,3 +21,24 @@
 .widgets--searchIcon{
     color: grey;
 }
+
+.widget--widgetContainer {
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 20px;
+    background-color: var(--twitter-background);
+    border-radius: 20px;
+}
+
+.widget--widgetContainer > h2 {
+    font-size: 18px;
+    font-weight: 800;
+    padding: 5px;
+    margin-bottom: 5px;
+}
+
+.widget-shareButton{
+    margin-top: 15px;
+    margin-left: 20px;
+    padding: 10px;
+}

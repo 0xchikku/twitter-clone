@@ -35,7 +35,10 @@ function Post({
                     <p>{text}</p>
                 </div>
             </div>
+            {image && 
+            <div className='post--image'>
             <img src={image} alt='upslash' />
+            </div>}
             <div className='post--footer'>
                 <ChatBubbleOutlineOutlinedIcon fontSize='small' />
                 <RepeatOutlinedIcon fontSize='small'/>
